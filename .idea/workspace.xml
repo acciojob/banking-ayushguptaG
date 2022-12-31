@@ -7,11 +7,9 @@
     <list default="true" id="efc5a8a8-7e5c-4800-af99-e4372e8fef2e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/CurrentAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/CurrentAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/SavingsAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/driver/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/driver/BankAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/driver/CurrentAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/driver/CurrentAccount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/driver/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/driver/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/driver/SavingsAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/driver/SavingsAccount.class" afterDir="false" />
     </list>
@@ -41,7 +39,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Work/Desktop/test&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,5 +53,15 @@
       <updated>1672404179394</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.Exception" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

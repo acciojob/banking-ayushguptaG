@@ -1,5 +1,6 @@
 package com.driver;
 
+
 public class BankAccount {
 
     private String name;
@@ -32,17 +33,21 @@ public class BankAccount {
         //Each digit of an account number can lie between 0 and 9 (both inclusive)
         //Generate account number having given number of 'digits' such that the sum of digits is equal to 'sum'
         //If it is not possible, throw "Account Number can not be generated" exception
-        String number= null;
-        try {
-            if (9 * digits < sum) {
-                throw new Exception("Account Number can not be generated");
+        boolean accGenerated= true;
+            try {
+                if (9 * digits < sum) {
+                    accGenerated = false;
+                    throw new Exception("Account Number can not be generated");
+                } else {
+                    String number= null;
+                    number= createAccountNumber(digits, sum);
+                    return number;
+                }
             }
-            else number= createAccountNumber(digits, sum);
-        }
-        catch(Exception e){
-            System.out.println(e);
-        }
-        return number;
+            catch(Exception e){
+                System.out.println(e);
+            }
+            return null;
     }
 
     public void deposit(double amount) {
