@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efc5a8a8-7e5c-4800-af99-e4372e8fef2e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/SavingsAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/SavingsAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/driver/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/driver/BankAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/driver/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/driver/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/driver/SavingsAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/driver/SavingsAccount.class" afterDir="false" />
-    </list>
+    <list default="true" id="efc5a8a8-7e5c-4800-af99-e4372e8fef2e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
