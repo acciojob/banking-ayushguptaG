@@ -32,11 +32,17 @@ public class BankAccount {
         //Each digit of an account number can lie between 0 and 9 (both inclusive)
         //Generate account number having given number of 'digits' such that the sum of digits is equal to 'sum'
         //If it is not possible, throw "Account Number can not be generated" exception
-        if(9*digits < sum){
-            throw new Exception("Account Number can not be generated");
+        String number= null;
+        try {
+            if (9 * digits < sum) {
+                throw new Exception("Account Number can not be generated");
+            }
+            else number= createAccountNumber(digits, sum);
         }
-        else  return createAccountNumber(digits, sum);
-
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return number;
     }
 
     public void deposit(double amount) {
@@ -46,10 +52,15 @@ public class BankAccount {
 
     public void withdraw(double amount) throws Exception {
         // Remember to throw "Insufficient Balance" exception, if the remaining amount would be less than minimum balance
-            if(balance-amount < minBalance){
+        try {
+            if (balance - amount < minBalance) {
                 throw new Exception("Insufficient Balance");
-            }
-            else balance-= amount;
+            } else balance -= amount;
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+
     }
     public String createAccountNumber(int digits, int sum){
 
@@ -57,12 +68,14 @@ public class BankAccount {
 
         while(digits > 0){
             if(sum > 9){
-                number.append('9');
+                number.append("9");
                 sum -= 9;
+                digits--;
             }
             else{
-                number.append((char)(sum+'0'));
+                number.append(String.valueOf(sum));
                 sum= 0;
+                digits--;
             }
         }
         return String.valueOf(number);

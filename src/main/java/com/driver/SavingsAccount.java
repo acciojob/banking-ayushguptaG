@@ -1,5 +1,7 @@
 package com.driver;
 
+import java.sql.SQLOutput;
+
 public class SavingsAccount extends BankAccount{
     private double rate;
     private double maxWithdrawalLimit;
@@ -23,7 +25,7 @@ public class SavingsAccount extends BankAccount{
         // Might throw the following errors:
         // 1. "Maximum Withdraw Limit Exceed" : If the amount exceeds maximum withdrawal limit
         // 2. "Insufficient Balance" : If the amount exceeds balance
-
+        try {
             if (amount > maxWithdrawalLimit) {
                 throw new Exception("Maximum Withdraw Limit Exceed");
             } else if (amount > getBalance()) {
@@ -33,6 +35,10 @@ public class SavingsAccount extends BankAccount{
                 balance -= amount;
                 setBalance(balance);
             }
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
     }
 
     public double getSimpleInterest(int years){

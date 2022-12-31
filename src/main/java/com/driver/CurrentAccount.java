@@ -7,14 +7,22 @@ public class CurrentAccount extends BankAccount{
         // minimum balance is 5000 by default. If balance is less than 5000, throw "Insufficient Balance" exception
 
             super(name,balance,5000);
-
-            if(balance < 5000)
-                throw new Exception("Insufficient Balance");
-
+            this.tradeLicenseId= tradeLicenseId;
+            try {
+                if (balance < 5000)
+                    throw new Exception("Insufficient Balance");
+            }
+            catch(Exception e){
+                System.out.println(e);
+            }
     }
 
     public String getTradeLicenseId() {
         return tradeLicenseId;
+    }
+
+    public void setTradeLicenseId(String tradeLicenseId) {
+        this.tradeLicenseId = tradeLicenseId;
     }
 
     public void validateLicenseId() throws Exception {
@@ -22,16 +30,22 @@ public class CurrentAccount extends BankAccount{
         // If the license Id is valid, do nothing
         // If the characters of the license Id can be rearranged to create any valid license Id
         // If it is not possible, throw "Valid License can not be generated" Exception
-        boolean valid= true;
-        int n= tradeLicenseId.length();
-        for(int pos=1; pos<n; pos++){
-            char c= tradeLicenseId.charAt(pos);
-            if(c==tradeLicenseId.charAt(pos-1)){
-                valid= false;
-                break;
+
+        try {
+            boolean valid= true;
+            int n = tradeLicenseId.length();
+            for (int pos = 1; pos < n; pos++) {
+                char c = tradeLicenseId.charAt(pos);
+                if (c == tradeLicenseId.charAt(pos - 1)) {
+                    valid = false;
+                    break;
+                }
             }
+            if (!valid) throw new Exception("Valid License can not be generated");
         }
-        if(!valid) throw new Exception("Valid License can not be generated");
+        catch(Exception e){
+            System.out.println(e);
+        }
     }
 
 }
