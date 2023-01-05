@@ -8,14 +8,10 @@ public class CurrentAccount extends BankAccount{
 
             super(name,balance,5000);
             this.tradeLicenseId= tradeLicenseId;
-            try {
                 if (balance < 5000)
                     throw new Exception("Insufficient Balance");
-            }
-            catch(Exception e){
-                System.out.println(e);
-            }
-    }
+
+             }
 
     public String getTradeLicenseId() {
         return tradeLicenseId;
@@ -31,7 +27,7 @@ public class CurrentAccount extends BankAccount{
         // If the characters of the license Id can be rearranged to create any valid license Id
         // If it is not possible, throw "Valid License can not be generated" Exception
 
-        try {
+
             boolean valid= true;
             int n = tradeLicenseId.length();
             for (int pos = 1; pos < n; pos++) {
@@ -40,12 +36,10 @@ public class CurrentAccount extends BankAccount{
                     valid = false;
                     break;
                 }
-            }
+
             if (!valid) throw new Exception("Valid License can not be generated");
         }
-        catch(Exception e){
-            System.out.println(e);
-        }
+
     }
 
 }
